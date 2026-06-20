@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flux — Work at the speed of thought</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">flux<span class="dot">.</span></a>
+      <ul class="nav__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <div class="nav__cta">
+        <a href="#" class="btn btn--ghost">Log in</a>
+        <a href="#" class="btn btn--primary">Get started</a>
+      </div>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#">Log in</a></li>
+        <li><a href="#" class="btn btn--primary">Get started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg-grid" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__badge">✦ Now in public beta</div>
+      <h1 class="hero__headline">
+        Move faster.<br />
+        <span class="hero__typewriter" id="typewriter" aria-live="polite"></span>
+      </h1>
+      <p class="hero__sub">
+        Flux connects your tasks, docs, and team into one frictionless workspace — so you spend less time managing and more time doing.
+      </p>
+      <div class="hero__actions">
+        <a href="#" class="btn btn--primary btn--lg">Start free — no card needed</a>
+        <a href="#how" class="btn btn--link">See how it works →</a>
+      </div>
+      <div class="hero__social-proof">
+        <div class="avatars">
+          <img src="https://i.pravatar.cc/40?img=1" alt="User" />
+          <img src="https://i.pravatar.cc/40?img=2" alt="User" />
+          <img src="https://i.pravatar.cc/40?img=3" alt="User" />
+          <img src="https://i.pravatar.cc/40?img=4" alt="User" />
+          <img src="https://i.pravatar.cc/40?img=5" alt="User" />
+        </div>
+        <p><strong>4,200+</strong> teams already shipping faster</p>
+      </div>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="dashboard-mock">
+        <div class="mock__topbar">
+          <div class="mock__dot red"></div>
+          <div class="mock__dot yellow"></div>
+          <div class="mock__dot green"></div>
+          <span class="mock__title">flux workspace</span>
+        </div>
+        <div class="mock__body">
+          <div class="mock__sidebar">
+            <div class="mock__sidebar-item active">📋 Tasks</div>
+            <div class="mock__sidebar-item">📄 Docs</div>
+            <div class="mock__sidebar-item">💬 Chat</div>
+            <div class="mock__sidebar-item">📊 Reports</div>
+          </div>
+          <div class="mock__main">
+            <div class="mock__card">
+              <div class="mock__card-header">
+                <span class="mock__tag in-progress">In Progress</span>
+                <span class="mock__due">Due today</span>
+              </div>
+              <div class="mock__card-title">Launch v2.0 campaign</div>
+              <div class="mock__progress-bar"><div class="mock__progress-fill" style="width:72%"></div></div>
+              <div class="mock__meta">72% complete · 3 members</div>
+            </div>
+            <div class="mock__card">
+              <div class="mock__card-header">
+                <span class="mock__tag done">Done</span>
+              </div>
+              <div class="mock__card-title">Design system audit</div>
+              <div class="mock__meta">Completed 2h ago</div>
+            </div>
+            <div class="mock__card mock__card--highlight">
+              <div class="mock__card-header">
+                <span class="mock__tag review">In Review</span>
+              </div>
+              <div class="mock__card-title">API documentation</div>
+              <div class="mock__meta">Awaiting feedback · 1 member</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos">
+    <div class="container">
+      <p class="logos__label">Trusted by teams at</p>
+      <div class="logos__track">
+        <div class="logos__scroll">
+          <span>Acme Corp</span><span>Horizon</span><span>Stackwise</span><span>Novu</span><span>Archetype</span><span>Pulseio</span><span>Driftline</span>
+          <!-- duplicated for seamless loop -->
+          <span>Acme Corp</span><span>Horizon</span><span>Stackwise</span><span>Novu</span><span>Archetype</span><span>Pulseio</span><span>Driftline</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything your team needs.<br />Nothing it doesn't.</h2>
+      <div class="features__grid">
+
+        <div class="feature-card feature-card--wide">
+          <div class="feature-card__icon">⚡</div>
+          <h3>Real-time collaboration</h3>
+          <p>Edit documents, assign tasks, and comment simultaneously with zero lag. Your team stays on the same page — literally.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🔗</div>
+          <h3>Unified task view</h3>
+          <p>One inbox for all your tasks across projects, tools, and teammates.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">📊</div>
+          <h3>Live analytics</h3>
+          <p>See velocity, blockers, and team load at a glance — updated in real time.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card__icon">🤖</div>
+          <h3>AI-assisted writing</h3>
+          <p>Draft, summarize, and polish docs in seconds with built-in AI that knows your context.</p>
+        </div>
+
+        <div class="feature-card feature-card--wide">
+          <div class="feature-card__icon">🔌</div>
+          <h3>300+ integrations</h3>
+          <p>Slack, GitHub, Figma, Notion, Google Workspace — Flux connects to the tools you already use, not the other way around.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-label">How it works</div>
+      <h2 class="section-title">Up and running in minutes.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <div class="step__content">
+            <h3>Create your workspace</h3>
+            <p>Sign up, name your workspace, and invite your team. No configuration hell required.</p>
+          </div>
+        </div>
+        <div class="step__connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <div class="step__content">
+            <h3>Import your existing work</h3>
+            <p>Bring in tasks from Jira, Notion, Linear, or a CSV. Flux keeps your history intact.</p>
+          </div>
+        </div>
+        <div class="step__connector" aria-hidden="true"></div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <div class="step__content">
+            <h3>Ship together</h3>
+            <p>Plan, track, and celebrate progress — all in one place, all in real time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonials__grid">
+        <div class="testimonial">
+          <p class="testimonial__quote">"Flux replaced four different tools for us. Our project lead said it was the first time she actually looked forward to Monday standups."</p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/48?img=12" alt="Sarah K." />
+            <div>
+              <strong>Sarah K.</strong>
+              <span>Head of Product, Novu</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial__quote">"We cut our weekly status meeting from 90 minutes to 15. The visibility Flux gives you is genuinely game-changing."</p>
+          <div class="testimonial__author">
+            <img src="https://i.pravatar.cc/48?img=33" alt="Marcus T." />
+            <div>
+              <strong>Marcus T.</strong>
+              <span>Engineering Manager, Stackwise</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">Simple pricing, no surprises.</h2>
+      <div class="pricing__toggle">
+        <span class="toggle__label">Monthly</span>
+        <label class="toggle" aria-label="Toggle annual billing">
+          <input type="checkbox" id="billingToggle" />
+          <span class="toggle__track"></span>
+        </label>
+        <span class="toggle__label">Annual <span class="badge">Save 20%</span></span>
+      </div>
+      <div class="pricing__grid">
+        <div class="plan">
+          <div class="plan__name">Starter</div>
+          <div class="plan__price"><span class="plan__amount" data-monthly="0" data-annual="0">$0</span><span class="plan__period">/mo</span></div>
+          <div class="plan__desc">For individuals and small side projects.</div>
+          <ul class="plan__features">
+            <li>Up to 3 members</li>
+            <li>5 active projects</li>
+            <li>2 GB storage</li>
+            <li>Basic analytics</li>
+          </ul>
+          <a href="#" class="btn btn--ghost btn--full">Get started free</a>
+        </div>
+        <div class="plan plan--featured">
+          <div class="plan__badge">Most popular</div>
+          <div class="plan__name">Pro</div>
+          <div class="plan__price"><span class="plan__amount" data-monthly="18" data-annual="14">$18</span><span class="plan__period">/mo per member</span></div>
+          <div class="plan__desc">For growing teams that need more power.</div>
+          <ul class="plan__features">
+            <li>Unlimited members</li>
+            <li>Unlimited projects</li>
+            <li>50 GB storage</li>
+            <li>Advanced analytics</li>
+            <li>AI writing assistant</li>
+            <li>300+ integrations</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full">Start 14-day trial</a>
+        </div>
+        <div class="plan">
+          <div class="plan__name">Enterprise</div>
+          <div class="plan__price"><span class="plan__amount" data-monthly="Custom" data-annual="Custom">Custom</span></div>
+          <div class="plan__desc">For large teams with advanced security needs.</div>
+          <ul class="plan__features">
+            <li>Everything in Pro</li>
+            <li>SSO / SAML</li>
+            <li>Dedicated support</li>
+            <li>Custom contracts</li>
+            <li>SLA guarantee</li>
+          </ul>
+          <a href="#" class="btn btn--ghost btn--full">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-section__inner">
+      <h2>Ready to move faster?</h2>
+      <p>Join 4,200+ teams already using Flux. Your first 14 days are on us.</p>
+      <a href="#" class="btn btn--primary btn--lg">Get started for free</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="nav__logo">flux<span class="dot">.</span></span>
+        <p>Work at the speed of thought.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <strong>Product</strong>
+          <a href="#">Features</a>
+          <a href="#">Integrations</a>
+          <a href="#">Changelog</a>
+          <a href="#">Roadmap</a>
+        </div>
+        <div class="footer__col">
+          <strong>Company</strong>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+          <a href="#">Press</a>
+        </div>
+        <div class="footer__col">
+          <strong>Legal</strong>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Flux Technologies, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
